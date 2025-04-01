@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css')}}" />
+
+<main class="dashboard-frame" data-el="dashboard-frame">
+  <div class="dashboard-container">
+    <section class="dashboard-main">
+      <header class="welcome-header">
+        <p class="welcome-text">Welcome back, Register name</p>
+        <h1 class="main-title">Revamp Your Routine</h1>
+      </header>
+
+      <section class="process-section">
+        <div class="icon-circle">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/543e4e192fde7424c4d931f34f00965cf61efd7a?placeholderIfAbsent=true&apiKey=a578636c21ff4781abbc7f78e7ee13c9" alt="Process icon" class="icon">
+        </div>
+        <h2 class="section-title">Process</h2>
+      </section>
+
+      <div class="metrics-grid">
+        <section class="metric-card">
+          <div class="icon-circle">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e1f2c6d03e73c243347b93be6ec444939e346378?placeholderIfAbsent=true&apiKey=a578636c21ff4781abbc7f78e7ee13c9" alt="Temperature icon" class="icon">
+          </div>
+          <h2 class="section-title">Temperature</h2>
+        </section>
+
+        <section class="metric-card">
+          <div class="icon-circle">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d51a6f51537bfede0f9c7ee1aa9c630887129b35?placeholderIfAbsent=true&apiKey=a578636c21ff4781abbc7f78e7ee13c9" alt="Heart Rate icon" class="icon">
+          </div>
+          <h2 class="section-title">Heart Rate</h2>
+        </section>
+      </div>
+    </section>
+
+    <section class="location-section">
+      <div class="icon-circle">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2c8e27810090fbeb444c5508447e39de88776957?placeholderIfAbsent=true&apiKey=a578636c21ff4781abbc7f78e7ee13c9" alt="Location icon" class="icon">
+      </div>
+      <h2 class="section-title">Location</h2>
+    </section>
+  </div>
+</main>
