@@ -1,0 +1,140 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #EDEAE1;
+}
+
+.sos-wrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.sos-button {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: none;
+    background-color: #e63946;
+    color: white;
+    font-size: 24px;
+    z-index: 10;
+    position: relative;
+    box-shadow: 0 0 0 10px rgba(230, 57, 70, 0.2);
+}
+
+.pulse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(230, 57, 70, 0.3);
+    animation: pulse 2s infinite;
+    z-index: 1;
+}
+
+    .pulse.delay-1 {
+        animation-delay: 0.5s;
+    }
+
+    .pulse.delay-2 {
+        animation-delay: 1s;
+    }
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+.sos-button:hover {
+    background-color: #c0392b;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.sos-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 20px rgba(255, 0, 0, 0.1);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.temperature-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.temperature-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.icon-circle {
+    background-color: #ded6c6;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.icon-circle i {
+    font-size: 16px;
+    color: #333;
+}
+
+.temperature-title {
+    font-weight: 600;
+    font-size: 18px;
+    color: #222;
+}
+
+.temperature-value {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.temp-number {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.temp-unit {
+    font-size: 20px;
+    color: #444;
+}
+
+.full-height {
+    height: 100%;
+}
